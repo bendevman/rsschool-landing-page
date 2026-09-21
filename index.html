@@ -5,8 +5,76 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer type="module" src="/src/main.js"></script>
-    <title>Home</title>
+    <title>Coffee house</title>
   </head>
   <body>
+    <div class="header section">
+      <div class="logo">
+        <a href="/" class="logo__link">
+          <svg class="svg logo__svg">
+            <use xlink:href="./src/assets/sprite.svg#logo"/>
+          </svg>
+        </a>
+      </div>
+      <div class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#favourites-coffee" class="nav__link btn-link">Favorite coffee</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link btn-link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#mobile-app" class="nav__link btn-link">Mobile app</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link btn-link">Contact us</a>
+          </li>
+        </ul>
+        <div class="menu-btn menu-btn_nav">
+          <a href="menu.html" class="menu-btn__link btn-link">
+            <span class="menu-btn__text">Menu</span>
+            <svg class="svg menu-btn__svg">
+              <use xlink:href="./src/assets/sprite.svg#coffee-cup"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="theme-switch">
+          <ul class="theme-switch__list">
+            <li class="theme-switch__item">
+              <label class="theme-switch__label">
+                <input class="theme-switch__radio" type="radio" id="radio-sun" name="mode">
+                <span class="theme-switch__icon">
+                  <svg class="svg theme-switch__svg">
+                    <use xlink:href="./src/assets/sprite.svg#sun"/>
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="theme-switch__item">
+              <label class="theme-switch__label">
+                <input class="theme-switch__radio" type="radio" id="radio-moon" name="mode">
+                <span class="theme-switch__icon">
+                  <svg class="svg theme-switch__svg theme-switch__svg-moon">
+                    <use xlink:href="./src/assets/sprite.svg#moon"/>
+                  </svg>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>       
+        <div class="menu-btn menu-btn_action">
+          <a href="menu.html" class="menu-btn__link btn-link">
+            <span class="menu-btn__text">Menu</span>
+            <svg class="svg menu-btn__svg">
+              <use xlink:href="./src/assets/sprite.svg#coffee-cup"/>
+            </svg>
+          </a>
+        </div>
+        <button class="burger-btn"></button>
+      </div>
+    </div>
   </body>
 </html>
