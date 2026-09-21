@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer type="module" src="/src/main.js"></script>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee house</title>
   </head>
   <body>
@@ -19,7 +18,7 @@
       <div class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#favourites-coffee" class="nav__link btn-link">Favorite coffee</a>
+            <a href="#favourite-coffee" class="nav__link btn-link">Favorite coffee</a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link btn-link">About</a>
@@ -79,7 +78,7 @@
     <div class="enjoy hero section">
       <div class="hero__display">
         <video autoplay muted loop class="hero__video">
-          <source src="./public/video.mp4" type="video/mp4">
+          <source src="/video.mp4" type="video/mp4">
         </video>
         <div class="hero__info">
           <h1 class="hero__heading h1"><span class="h1_accent">Enjoy</span> premium coffee at our charming cafe</h1>
@@ -93,7 +92,7 @@
         </div> 
       </div>
     </div>
-    <div id="favourites-coffee" class="favorite section">
+    <div id="favourite-coffee" class="favorite section">
       <h2 class="favorite__title h2 h2_text_center">Choose your <span class="h2_accent">favorite</span> coffee</h2>
       <div class="slider">
         <button class="slider__btn slider__btn_left">
@@ -180,6 +179,39 @@
         </li>
       </ul>
     </div>
+    <div id="mobile-app" class="app section">
+      <div class="app__info">
+        <h2 class="h2 app__title"><span class="h2_accent">Download</span> our apps to start ordering</h2>
+        <p class="app__text">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
+        <ul class="app__list">
+          <li class="app__item">
+            <a target="_blank" href="https://apple.com/app-store" class="app__link app-btn">
+              <svg class="app-btn__svg">
+                <use xlink:href="./src/assets/sprite.svg#icon-apple"/>
+              </svg>
+              <span class="app-btn__text">
+                <span class="caption">Available on the</span>
+                <span class="app-btn__text_store">App Store</span>
+              </span>
+            </a>
+          </li>
+          <li class="app__item">
+            <a target="_blank" href="https://play.google.com/store" class="app__link app-btn">
+              <svg class="app-btn__svg">
+                <use xlink:href="./src/assets/sprite.svg#icon-android"/>
+              </svg>
+              <span class="app-btn__text">
+                <span class="caption">Available on the</span>
+                <span class="app-btn__text_store">Google Play</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="app__pic">
+        <img src="./src/assets/mobile-screens.png" alt="mobile-screens" class="app__img">
+      </div>
+    </div>
     <div id="contacts" class="footer section">
       <div class="footer__content">
         <div class="offer">
@@ -239,5 +271,6 @@
         </div>
       </div>
     </div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
