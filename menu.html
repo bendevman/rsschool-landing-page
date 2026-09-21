@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee house</title>
+  </head>
+  <body>
+    <div class="header section">
+      <div class="logo">
+        <a href="/" class="logo__link">
+          <svg class="svg logo__svg">
+            <use xlink:href="./src/assets/sprite.svg#logo"/>
+          </svg>
+        </a>
+      </div>
+      <div class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html#favourite-coffee" class="nav__link btn-link">Favorite coffee</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link btn-link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#mobile-app" class="nav__link btn-link">Mobile app</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#contacts" class="nav__link btn-link">Contact us</a>
+          </li>
+        </ul>
+        <div class="menu-btn menu-btn_nav">
+          <a href="menu.html" class="menu-btn__link btn-link">
+            <span class="menu-btn__text">Menu</span>
+            <svg class="svg menu-btn__svg">
+              <use xlink:href="./src/assets/sprite.svg#coffee-cup"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="theme-switch">
+          <ul class="theme-switch__list">
+            <li class="theme-switch__item">
+              <label class="theme-switch__label">
+                <input class="theme-switch__radio" type="radio" id="radio-sun" name="mode">
+                <span class="theme-switch__icon">
+                  <svg class="svg theme-switch__svg">
+                    <use xlink:href="./src/assets/sprite.svg#sun"/>
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="theme-switch__item">
+              <label class="theme-switch__label">
+                <input class="theme-switch__radio" type="radio" id="radio-moon" name="mode">
+                <span class="theme-switch__icon">
+                  <svg class="svg theme-switch__svg theme-switch__svg-moon">
+                    <use xlink:href="./src/assets/sprite.svg#moon"/>
+                  </svg>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>       
+        <div class="menu-btn menu-btn_action">
+          <a href="menu.html" class="menu-btn__link btn-link">
+            <span class="menu-btn__text">Menu</span>
+            <svg class="svg menu-btn__svg">
+              <use xlink:href="./src/assets/sprite.svg#coffee-cup"/>
+            </svg>
+          </a>
+        </div>
+        <button class="burger-btn"></button>
+      </div>
+    </div>
+    <div class="menu section">
+      <h1 class="h2 h2_text_center menu__title">Behind each of our cups hides an <span class="h2_accent">amazing surprise</span></h1>
+      <ul class="menu__tabs tabs">
+        <li class="tabs__item tabs__item_active">
+          <button data-category="coffee" class="tabs__btn btn-link">
+            <span class="tabs__icon tabs__icon_coffee"></span>
+            <span class="tabs__text">Coffee</span>
+          </button>
+        </li>
+        <li class="tabs__item">
+          <button data-category="tea" class="tabs__btn btn-link">
+            <span class="tabs__icon tabs__icon_tea"></span>
+            <span class="tabs__text">Tea</span>
+          </button>
+        </li> 
+        <li class="tabs__item">
+          <button data-category="dessert" class="tabs__btn btn-link">
+            <span class="tabs__icon tabs__icon_dessert"></span>
+            <span class="tabs__text">Dessert</span>
+          </button>
+        </li> 
+      </ul>
+      <ul class="menu__list">
+      </ul>
+      <button class="refresh-btn">
+        <svg class="svg refresh-btn__svg">
+          <use xlink:href="./src/assets/sprite.svg#refresh"/>
+        </svg>
+      </button>
+      <div class="modal">
+      </div>
+    </div>
+    <div id="contacts" class="footer section">
+      <div class="footer__content">
+        <div class="offer">
+          <h2 class="h2 offer__title">Sip, Savor, Smile. <span class="h2_accent">It’s coffee time!</span></h2>
+          <ul class="socials">
+            <li class="socials__item">
+              <a target="_blank" href="https://twitter.com" class="socials__link">
+                <svg class="svg socials__svg">
+                  <use xlink:href="./src/assets/sprite.svg#twitter"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a target="_blank" href="https://instagram.com" class="socials__link">
+                <svg class="svg socials__svg">
+                  <use xlink:href="./src/assets/sprite.svg#instagram"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a target="_blank" href="https://facebook.com" class="socials__link">
+                <svg class="svg socials__svg">
+                  <use xlink:href="./src/assets/sprite.svg#facebook"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <h3 class="h3 info__title">Contact us</h3>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a target="_blank" href="https://www.google.com/maps/place/8558+Greene+Ave,+Los+Angeles,+CA+90066,+USA/@33.9943717,-118.4223881,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2ba6d911db3db:0x8f9e732fe8fe1778!8m2!3d33.9943673!4d-118.4198132?entry=ttu" class="contacts__link btn-link">
+                <svg class="svg contacts__svg">
+                  <use xlink:href="./src/assets/sprite.svg#pin-alt"/>
+                </svg>
+                <span class="contacs__text">8558 Green Rd., LA</span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a target="_blank" href="tel:+16035550123" class="contacts__link btn-link">
+                <svg class="svg contacts__svg">
+                  <use xlink:href="./src/assets/sprite.svg#phone"/>
+                </svg>
+                <span class="contacs__text">+1 (603) 555-0123</span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="javascript:void(0);" class="contacts__link btn-link contacts__link_disabled">
+                <svg class="svg contacts__svg">
+                  <use xlink:href="./src/assets/sprite.svg#clock"/>
+                </svg>
+                <span class="contacs__text">Mon-Sat: 9:00 AM – 23:00 PM</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

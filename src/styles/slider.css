@@ -108,7 +108,7 @@
     width: 40px;
     height: 4px;
     border: 0;
-    background: --border-primary;
+    background: var(--border-primary);
     overflow: hidden;
   }
   .controls__btn_active {
