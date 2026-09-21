@@ -1,0 +1,131 @@
+.slider {
+  display: flex;
+  align-items: center;
+  
+  justify-content: space-between;
+  padding: 40px 4px 50px 4px;
+  @media (max-width: 768px) {
+    padding: 40px 0 50px 0;
+  }
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+  position: relative;
+  .slider__display {
+    overflow: hidden;
+    align-self: center;
+    min-height:  640px;
+    max-width:  480px;
+    @media (max-width: 768px) {
+      max-width:  348px;
+      min-height: auto;
+    }
+  }
+  .slider__btn {
+    display: flex;
+    @media (max-width: 768px) {
+      display: none;
+    }
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid var(--text-primary);
+    background: var(--bg-page);
+    padding: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    @media (hover: hover) {
+      &:hover {
+        background: var(--text-primary);
+        .slider-btn__svg {
+          stroke: white;
+        }
+      }
+    }
+  }
+  .slider-btn__svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--text-primary);
+  }
+  .slider__controls {
+    position: absolute;
+    bottom: 0;
+  }
+  .slider__list {
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+  }
+  .slider__item {
+    user-select: none;
+
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    @media (max-width: 768px) {
+      max-width: 348px;
+    }
+  }
+  .slider__pic {
+    max-width: 480px;
+    @media (max-width: 768px) {
+      max-width: 348px;
+    }
+  }
+  .slider__img {
+    display: block;
+    pointer-events: none;
+
+    max-width: 480px;
+    @media (max-width: 768px) {
+      max-width: 348px;
+    }
+  }
+  .slider__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .slider__text {
+    margin-top: 16px;
+  }
+  .slider__price {
+    margin-top: 16px;
+  }
+}
+.controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  .controls__btn {
+    display: flex;
+    width: 40px;
+    height: 4px;
+    border: 0;
+    background: --border-primary;
+    overflow: hidden;
+  }
+  .controls__btn_active {
+    .controls__pro-bar {
+      animation: slide 5s forwards;
+    }
+  }
+  &__pro-bar {
+    position: relative;
+    width: 40px;
+    height: 4px;
+    background: var(--text-primary);
+    left: -100%;
+  }
+  @keyframes slide {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}
