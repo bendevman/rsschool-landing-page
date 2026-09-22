@@ -65,7 +65,6 @@
       right: 14px;
     }
     @media (hover: hover) {
-
       &:hover {
         .hero-btn__text {
           left: 0;
