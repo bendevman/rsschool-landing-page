@@ -1,0 +1,9 @@
+.about {
+  padding-top: 96px;
+  .about__title {
+    @media (max-width: 768px) {
+      font-size: 32px;
+      line-height: 125%;
+    }
+  }
+}
