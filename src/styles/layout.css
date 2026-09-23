@@ -29,7 +29,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --text-primary: #E1D4C9;
     --text-inverse: #E1D4C9;
@@ -40,7 +40,7 @@
     --border-primary: #665F55;
     --border-inverse: #C1B6AD;
   }
-}
+} */
 
 html {
   height: 100vh;
@@ -94,14 +94,14 @@ body {
 }
 
 .dark-mode {
-  --text-primary: #E1D4C9;
-  --text-inverse: #E1D4C9;
-  --text-accent: #B0907A;
-  --bg-page: #292826;
-  --bg-container: #403F3D;
-  --bg-overlay: rgba(41, 40, 38, 0.8);
-  --border-primary: #665F55;
-  --border-inverse: #C1B6AD;
+  --text-primary: var(--dark-text-primary);
+  --text-inverse: var(--dark-text-inverse);
+  --text-accent: var(--dark-text-accent);
+  --bg-page: var(--dark-bg-page);
+  --bg-container: var(--dark-bg-container);
+  --bg-overlay: var(--dark-bg-overlay);
+  --border-primary: var(--dark-border-primary);
+  --border-inverse: var(--dark-border-inverse);
 }
 
 .no-scroll {
