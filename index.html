@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee house</title>
+  </head>
+  <body>
+    <header class="header section">
+      <div class="logo">
+        <a href="/" class="logo__link">
+          <svg class="svg logo__svg">
+            <use xlink:href="./src/assets/sprite.svg#logo"/>
+          </svg>
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#favourite-coffee" class="nav__link btn-link">Favorite coffee</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link btn-link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#mobile-app" class="nav__link btn-link">Mobile app</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link btn-link">Contact us</a>
+          </li>
+        </ul>
+        <div class="menu-btn menu-btn_nav">
+          <a href="menu.html" class="menu-btn__link btn-link">
+            <span class="menu-btn__text">Menu</span>
+            <svg class="svg menu-btn__svg">
+              <use xlink:href="./src/assets/sprite.svg#coffee-cup"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <div class="theme-switch">
+          <ul class="theme-switch__list">
+            <li class="theme-switch__item">
+              <label class="theme-switch__label">
+                <input class="theme-switch__radio" type="radio" id="radio-sun" name="mode">
+                <span class="theme-switch__icon">
+                  <svg class="svg theme-switch__svg">
+                    <use xlink:href="./src/assets/sprite.svg#sun"/>
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="theme-switch__item">
+              <label class="theme-switch__label">
+                <input class="theme-switch__radio" type="radio" id="radio-moon" name="mode">
+                <span class="theme-switch__icon">
+                  <svg class="svg theme-switch__svg theme-switch__svg-moon">
+                    <use xlink:href="./src/assets/sprite.svg#moon"/>
+                  </svg>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>       
+        <div class="menu-btn menu-btn_action">
+          <a href="menu.html" class="menu-btn__link btn-link">
+            <span class="menu-btn__text">Menu</span>
+            <svg class="svg menu-btn__svg">
+              <use xlink:href="./src/assets/sprite.svg#coffee-cup"/>
+            </svg>
+          </a>
+        </div>
+        <button class="burger-btn"></button>
+      </div>
+    </header>
+    <div class="enjoy hero section">
+      <div class="hero__display">
+        <video autoplay muted loop class="hero__video">
+          <source src="/video.mp4" type="video/mp4">
+        </video>
+        <div class="hero__info">
+          <h1 class="hero__heading h1"><span class="h1_accent">Enjoy</span> premium coffee at our charming cafe</h1>
+          <p class="hero__text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+          <a href="menu.html" class="hero-btn btn-link">
+            <span class="hero-btn__text">Menu</span>
+            <svg class="svg hero-btn__svg">
+              <use xlink:href="./src/assets/sprite.svg#coffee-cup"/>
+            </svg>
+          </a>
+        </div> 
+      </div>
+    </div>
+    <div id="favourite-coffee" class="favorite section">
+      <h2 class="favorite__title h2 h2_text_center">Choose your <span class="h2_accent">favorite</span> coffee</h2>
+      <div class="slider">
+        <button class="slider__btn slider__btn_left">
+          <svg class="svg slider-btn__svg">
+            <use xlink:href="./src/assets/sprite.svg#arrow-left"/>
+          </svg>
+        </button>
+        <div class="slider__display">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <div class="slider__pic">
+                <img src="./src/assets/coffee-slider-1.png" class="slider__img" alt="coffee">
+              </div>
+              <div class="slider__info">
+                <span class="slider__title h3">S’mores Frappuccino</span>
+                <span class="slider__text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</span>
+                <span class="slider__price h3">$5.50</span>
+              </div>
+            </li>
+            <li class="slider__item">
+              <div class="slider__pic">
+                <img src="./src/assets/coffee-slider-2.png" class="slider__img" alt="coffee">
+              </div>
+              <div class="slider__info">
+                <span class="slider__title h3">Macchiato</span>
+                <span class="slider__text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</span>
+                <span class="slider__price h3">$5.00</span>
+              </div>
+            </li>
+            <li class="slider__item">
+              <div class="slider__pic">
+                <img src="./src/assets/coffee-slider-3.png" class="slider__img" alt="coffee">
+              </div>
+              <div class="slider__info">
+                <span class="slider__title h3">Ice coffee</span>
+                <span class="slider__text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</span>
+                <span class="slider__price h3">$4.50</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="slider__btn slider__btn_right">
+          <svg class="svg slider-btn__svg">
+            <use xlink:href="./src/assets/sprite.svg#arrow-right"/>
+          </svg>
+        </button>
+        <ul class="controls slider__controls">
+          <li class="controls__item">
+            <div class="controls__btn controls__btn_active">
+              <span class="controls__pro-bar"></span>
+            </div>
+          </li>
+          <li class="controls__item">
+            <div class="controls__btn">
+              <span class="controls__pro-bar"></span>
+            </div>
+          </li>
+          <li class="controls__item">
+            <div class="controls__btn">
+              <span class="controls__pro-bar"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="about" class="about section">
+      <h2 class="h2 about__title">Resource is <span class="h2_accent">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
+      <ul class="gallery">
+        <li class="gallery__item">
+          <div class="gallery__pic">
+            <img src="./src/assets/about-1.jpg" alt="coffee" class="gallery__img">
+          </div>
+          <div class="gallery__pic">
+            <img src="./src/assets/about-2.jpg" alt="coffee" class="gallery__img">
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="gallery__pic">
+            <img src="./src/assets/about-4.jpg" alt="coffee" class="gallery__img">
+          </div>
+          <div class="gallery__pic">
+            <img src="./src/assets/about-3.jpg" alt="coffee" class="gallery__img">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="mobile-app" class="app section">
+      <div class="app__info">
+        <h2 class="h2 app__title"><span class="h2_accent">Download</span> our apps to start ordering</h2>
+        <p class="app__text">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
+        <ul class="app__list">
+          <li class="app__item">
+            <a target="_blank" href="https://apple.com/app-store" class="app__link app-btn">
+              <svg class="app-btn__svg">
+                <use xlink:href="./src/assets/sprite.svg#icon-apple"/>
+              </svg>
+              <span class="app-btn__text">
+                <span class="caption">Available on the</span>
+                <span class="app-btn__text_store">App Store</span>
+              </span>
+            </a>
+          </li>
+          <li class="app__item">
+            <a target="_blank" href="https://play.google.com/store" class="app__link app-btn">
+              <svg class="app-btn__svg">
+                <use xlink:href="./src/assets/sprite.svg#icon-android"/>
+              </svg>
+              <span class="app-btn__text">
+                <span class="caption">Available on the</span>
+                <span class="app-btn__text_store">Google Play</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="app__pic">
+        <img src="./src/assets/mobile-screens.png" alt="mobile-screens" class="app__img">
+      </div>
+    </div>
+    <footer id="contacts" class="footer section">
+      <div class="footer__content">
+        <div class="offer">
+          <h2 class="h2 offer__title">Sip, Savor, Smile. <span class="h2_accent">It’s coffee time!</span></h2>
+          <ul class="socials">
+            <li class="socials__item">
+              <a target="_blank" href="https://twitter.com" class="socials__link">
+                <svg class="svg socials__svg">
+                  <use xlink:href="./src/assets/sprite.svg#twitter"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a target="_blank" href="https://instagram.com" class="socials__link">
+                <svg class="svg socials__svg">
+                  <use xlink:href="./src/assets/sprite.svg#instagram"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a target="_blank" href="https://facebook.com" class="socials__link">
+                <svg class="svg socials__svg">
+                  <use xlink:href="./src/assets/sprite.svg#facebook"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <h3 class="h3 info__title">Contact us</h3>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a target="_blank" href="https://www.google.com/maps/place/8558+Greene+Ave,+Los+Angeles,+CA+90066,+USA/@33.9943717,-118.4223881,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2ba6d911db3db:0x8f9e732fe8fe1778!8m2!3d33.9943673!4d-118.4198132?entry=ttu" class="contacts__link btn-link">
+                <svg class="svg contacts__svg">
+                  <use xlink:href="./src/assets/sprite.svg#pin-alt"/>
+                </svg>
+                <span class="contacs__text">8558 Green Rd., LA</span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a target="_blank" href="tel:+16035550123" class="contacts__link btn-link">
+                <svg class="svg contacts__svg">
+                  <use xlink:href="./src/assets/sprite.svg#phone"/>
+                </svg>
+                <span class="contacs__text">+1 (603) 555-0123</span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="javascript:void(0);" class="contacts__link btn-link contacts__link_disabled">
+                <svg class="svg contacts__svg">
+                  <use xlink:href="./src/assets/sprite.svg#clock"/>
+                </svg>
+                <span class="contacs__text">Mon-Sat: 9:00 AM – 23:00 PM</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: visible;
+}
+.header-actions {
+  display: flex;
+  gap: 24px;
+  height: 60px;
+  align-items: center;
+  margin-left: auto;
+}

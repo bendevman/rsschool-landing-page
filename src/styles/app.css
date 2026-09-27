@@ -1,0 +1,87 @@
+.app {
+  padding-top: 100px;
+  display: flex;
+  gap: 100px;
+  @media (max-width: 768px) {
+    gap: 40px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  .app__info {
+    padding-top: 144px;
+    @media (max-width: 768px) {
+    padding-top: 0;
+    }
+    flex: 1;    
+  }
+  .app__title {
+    letter-spacing: 0.5px;
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+  .app__text {
+    padding-top: 40px;
+  }
+  .app__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    @media (max-width: 768px) {
+      padding: 0 29px;
+    }
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+  .app__img {
+    width: 100%;
+    display: block;
+  }
+  .app__list {
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+.app-btn {
+  display: flex;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 1px solid var(--text-primary);
+  border-radius: 40px;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: 0.3s;
+  @media (hover: hover) {
+    &:hover {
+      background: var(--bg-container);
+      .app-btn__svg {
+        fill: var(--text-primary);
+      }
+      .app-btn__text {
+        color: var(--text-primary);
+      }
+    }
+  }
+  .app-btn__svg {
+    width: 36px;
+    height: 36px;
+    fill: var(--text-primary);
+    transition: 0.3s;
+  }
+  .app-btn__text {
+    min-width: 115px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    .app-btn__text_store {
+      font-weight: bold;
+    }
+  }
+}

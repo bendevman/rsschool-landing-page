@@ -1,0 +1,49 @@
+.menu-btn {
+  display: flex;
+  align-items: center;
+  display: none;
+  
+  .menu-btn__link {
+    transition: 0.3s;
+    color: var(--text-primary);
+    display: flex;
+    border-bottom: solid 2px transparent;
+    @media (hover: hover) {
+      &:hover {
+        border-bottom: solid 2px var(--text-primary);
+      }
+    }
+    
+    @media (max-width: 768px){
+      font-size: 32px;
+      gap: 15px;
+      border: none;
+    }
+
+  }
+  .menu-btn__svg {
+    height: 20px;
+    width: 20px;
+    stroke: var(--text-primary);
+
+    @media (max-width: 768px){
+      height:  40px;
+      width:  40px;
+    }
+  }
+}
+.menu-btn_action {
+  display: flex;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.menu-btn_nav {
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+.menu-btn_disable {
+  border-bottom: solid 2px var(--text-primary);
+  pointer-events: none;
+}

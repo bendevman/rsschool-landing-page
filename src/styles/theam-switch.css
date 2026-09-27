@@ -1,0 +1,52 @@
+.theme-switch {
+  display: flex;
+  width: 88px;
+  height: 44px;
+  .theme-switch__svg {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--text-primary);
+  }
+  .theme-switch__svg-moon {
+    width: 18px;
+    height: 18px;
+  }
+  .theme-switch__list {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    border: 1px solid var(--border-primary);
+    border-radius: 50px;
+    padding: 3px;
+  }
+  .theme-switch__label {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    transition: 0.5s;
+  }
+  .theme-switch__radio {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+  }
+  .theme-switch__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+  .theme-switch__radio:checked + .theme-switch__icon {
+    background: var(--text-accent);
+    .theme-switch__svg {
+      fill: var(--text-inverse);
+    }
+  }
+}
