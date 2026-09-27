@@ -398,5 +398,11 @@ if (modal) {
       });
     }
   })
+  window.addEventListener("keydown", (event) => {
+    if (event.code === "Escape") {
+      body.classList.remove('no-scroll')
+      modal.classList.remove('modal_active')
+    }
+  });
 }
 
